@@ -3,7 +3,7 @@ package org.ecnumc.ecnu;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.ecnumc.ecnu.common.ECNUContent;
+import org.bettercombatmod.bettercombat.common.BetterCombatMod;
 
 /**
  * Mod Main Class
@@ -11,11 +11,11 @@ import org.ecnumc.ecnu.common.ECNUContent;
  */
 @SuppressWarnings("java:S1118")
 @Mod(ECNUForge.MODID)
-public class ECNUForge {
-	public static final String MODID = "ecnu";
+public class BetterCombatForge {
+	public static final String MODID = "bettercombat";
 
-	public ECNUForge() {
+	public BetterCombatForge() {
 		IEventBus modBus = FMLJavaModLoadingContext.get().getModEventBus();
-		ECNUContent.modConstruction(modBus);
+		BetterCombatMod.modConstruction(modBus);
 	}
 }
